@@ -1,0 +1,24 @@
+{
+  "short_name": "루미북클럽",
+  "name": "루미북클럽 - PWA 디지털 책장",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#F9F8F6",
+  "theme_color": "#4F46E5",
+  "display": "standalone",
+  "orientation": "portrait",
+  "lang": "ko"
+}
