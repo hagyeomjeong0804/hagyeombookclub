@@ -1,14 +1,10 @@
 const CACHE_NAME = 'lumi-bookclub-v1';
 const ASSETS_TO_CACHE = [
-  '/',
-  '/index.html',
-  '/manifest.json',
-  '/favicon.ico',
-  '/icon-192.png',
-  '/icon-512.png'
+  './index.html',
+  './manifest.json'
 ];
 
-// 서비스 워커 설치 및 오프라인 캐싱
+// 서비스 워커 설치 및 캐시 저장
 self.addEventListener('install', (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
@@ -18,7 +14,7 @@ self.addEventListener('install', (event) => {
   self.skipWaiting();
 });
 
-// 자원 응답 (캐시 우선 전략)
+// 오프라인 리소스 응답 (캐시 우선 전략)
 self.addEventListener('fetch', (event) => {
   event.respondWith(
     caches.match(event.request).then((cachedResponse) => {

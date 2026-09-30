@@ -3,19 +3,19 @@
   "name": "루미북클럽 - PWA 디지털 책장",
   "icons": [
     {
-      "src": "/icon-192.png",
-      "type": "image/png",
+      "src": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=192&h=192&fit=crop&q=80",
+      "type": "image/jpeg",
       "sizes": "192x192",
       "purpose": "any maskable"
     },
     {
-      "src": "/icon-512.png",
-      "type": "image/png",
+      "src": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=512&h=512&fit=crop&q=80",
+      "type": "image/jpeg",
       "sizes": "512x512",
       "purpose": "any maskable"
     }
   ],
-  "start_url": "/",
+  "start_url": "./index.html",
   "background_color": "#F9F8F6",
   "theme_color": "#4F46E5",
   "display": "standalone",
